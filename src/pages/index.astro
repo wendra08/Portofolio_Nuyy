@@ -1,0 +1,60 @@
+---
+import '@fontsource/dm-sans/400.css';
+import '@fontsource/dm-sans/500.css';
+import '@fontsource/dm-sans/600.css';
+import '@fontsource/cormorant-garamond/400.css';
+import '@fontsource/cormorant-garamond/500.css';
+import '@fontsource/cormorant-garamond/400-italic.css';
+import '../styles/global.css';
+import MediaSlot from '../components/MediaSlot.astro';
+import { profile, experiences, works, certificates, awards } from '../data/portfolio';
+---
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio Nur Hidayati. HSE Administrator dengan pengalaman administrasi bisnis, document control, public speaking, dan desain publikasi." />
+    <meta name="theme-color" content="#793b46" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Nur Hidayati — Administrasi, Komunikasi & Kreativitas</title>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Lewati ke konten</a>
+    <header class="header"><div class="container nav-wrap">
+      <a class="wordmark" href="#beranda" aria-label="Nur Hidayati, beranda">nh<span>.</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button>
+      <nav id="navigation" aria-label="Navigasi utama"><a href="#tentang">Tentang</a><a href="#pengalaman">Pengalaman</a><a href="#karya">Karya</a><a href="#pencapaian">Pencapaian</a><a class="nav-contact" href="#kontak">Mari terhubung <span aria-hidden="true">↗</span></a></nav>
+    </div></header>
+    <main id="main">
+      <section class="hero container" id="beranda" aria-labelledby="hero-title">
+        <div class="hero-copy"><p class="eyebrow"><span class="short-line"></span> PORTFOLIO PROFESIONAL</p>
+          <h1 id="hero-title">Nur<br /><em>Hidayati.</em></h1>
+          <p class="hero-role">HSE Administrator <span>·</span> Business Administration</p>
+          <p class="hero-intro">Ketelitian dalam setiap detail.<br />Kejelasan dalam setiap komunikasi.</p>
+          <p class="hero-description">Mendukung operasional melalui pengelolaan dokumen yang terstruktur, pelaporan yang jelas, dan komunikasi yang efektif.</p>
+          <div class="hero-actions"><a class="button" href="#pengalaman">Jelajahi pengalaman <span aria-hidden="true">↗</span></a><a class="text-link" href="/cv-nur-hidayati.pdf" download>Unduh CV <span aria-hidden="true">↓</span></a></div>
+          <p class="location"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>{profile.location}</p>
+        </div>
+        <div class="hero-visual"><div class="portrait-frame">{profile.portrait ? <img class="portrait" src={profile.portrait} alt="Nur Hidayati" width="600" height="780" /> : <div class="portrait-placeholder"><span class="portrait-monogram" aria-hidden="true">Nh.</span><div><span class="eyebrow">RUANG UNTUK CERITA PERSONAL</span><p>Foto profil<br /><em>segera hadir.</em></p></div></div>}<span class="frame-index">01 / INTRODUCTION</span></div><div class="portrait-note"><span class="note-mark" aria-hidden="true">✳</span><p>Terstruktur dalam bekerja.<br /><em>Hangat dalam berkomunikasi.</em></p></div><span class="vertical-label" aria-hidden="true">ADMINISTRATION MEETS COMMUNICATION</span></div>
+      </section>
+      <div class="stats-band"><div class="container stats"><div><strong>160<span>+</span></strong><p>Entri data per bulan<small>Pengalaman administrasi magang</small></p></div><div><strong>50<span>+</span></strong><p>Desain publikasi<small>Media & informasi organisasi</small></p></div><div><strong>1.000</strong><p>Peserta dalam acara<small>Jangkauan audiens sebagai MC</small></p></div></div></div>
+      <section class="section container about" id="tentang" aria-labelledby="about-title"><div><p class="eyebrow">01 — TENTANG SAYA</p><h2 id="about-title">Rapi dalam proses.<br /><em>Bermakna dalam hasil.</em></h2></div><div class="about-copy"><p>Saya Nur Hidayati, lulusan Sarjana Terapan Bisnis dari Politeknik Negeri Samarinda. Saya terbiasa bekerja dengan dokumen, data, dan berbagai kebutuhan administrasi yang memerlukan ketelitian.</p><p>Pengalaman sebagai HSE Administrator, pengelola media organisasi, dan Master of Ceremony membentuk cara saya bekerja: sistematis, adaptif, dan mengutamakan komunikasi yang baik.</p><div class="education"><span class="education-year">2021 — 2025</span><h3>Politeknik Negeri Samarinda</h3><p>Sarjana Terapan Bisnis · Administrasi Bisnis</p><span class="pill">IPK 3,89 / 4,00</span></div></div></section>
+      <section class="section experience-section" id="pengalaman" aria-labelledby="experience-title"><div class="container"><div class="section-heading"><div><p class="eyebrow">02 — PERJALANAN PROFESIONAL</p><h2 id="experience-title">Pengalaman yang<br /><em>membentuk cara kerja.</em></h2></div><p>Dari pengelolaan dokumen<br />hingga menghidupkan sebuah acara.</p></div><div class="experience-list">{experiences.map((item, i) => <article class="experience"><div class="experience-date"><span class="experience-number">0{i+1}</span><span>{item.date}</span></div><div><h3>{item.role}</h3><p class="company">{item.company}</p><p>{item.description}</p><ul>{item.points.map(point => <li>{point}</li>)}</ul><div class="tags">{item.tags.map(tag => <span>{tag}</span>)}</div></div></article>)}</div></div></section>
+      <section class="section container" id="karya" aria-labelledby="works-title"><div class="section-heading"><div><p class="eyebrow">03 — KARYA & DOKUMENTASI</p><h2 id="works-title">Lebih dekat dengan<br /><em>apa yang saya kerjakan.</em></h2></div><p>Pilihan karya dan dokumentasi<br />sedang dikurasi untuk ruang ini.</p></div><div class="works-grid">{works.map((work, i) => <article class="work-card"><MediaSlot src={work.image} alt={work.alt} label={work.placeholder} variant={'work-media work-'+i}/><div class="work-meta"><span>{work.category}</span><span>0{i+1}</span></div><h3>{work.title}</h3><p>{work.description}</p></article>)}</div></section>
+      <section class="leadership"><div class="container leadership-inner"><div><p class="eyebrow">KEPEMIMPINAN & ORGANISASI</p><h2>Bertumbuh bersama.<br /><em>Bergerak sebagai tim.</em></h2><p>Di UKM PPKM, saya belajar memimpin tim media, membagi tanggung jawab, menyusun rencana konten, dan membimbing anggota melalui pelatihan multimedia.</p><div class="leadership-roles"><div><span>OKT 2023 — OKT 2024</span><h3>Kepala Departemen Media dan Informasi</h3></div><div><span>MAR — OKT 2023</span><h3>Wakil Kepala Departemen Media dan Informasi</h3></div></div><p class="leadership-footnote">Turut mengoordinasikan dua kompetisi karya tulis ilmiah berskala internal dan nasional.</p></div><MediaSlot alt="Dokumentasi kegiatan bersama tim UKM PPKM" label="Momen bersama tim" variant="team-media"/></div></section>
+      <section class="section container" id="pencapaian" aria-labelledby="achievement-title"><div class="section-heading"><div><p class="eyebrow">04 — PENDIDIKAN & PENCAPAIAN</p><h2 id="achievement-title">Belajar, berproses,<br /><em>dan melangkah lebih jauh.</em></h2></div><p>Bekal pengetahuan dan pengalaman<br />yang terus saya kembangkan.</p></div><div class="achievement-grid"><div><h3 class="group-title">Penghargaan <span>01 — 05</span></h3><div class="awards">{awards.map(([year,title,detail]) => <article class="award"><span>{year}</span><div><h4>{title}</h4><p>{detail}</p></div><span class="award-mark" aria-hidden="true">✧</span></article>)}</div></div><div><h3 class="group-title">Lisensi & sertifikasi <span>01 — 02</span></h3><div class="certificates">{certificates.map(c => <article class="certificate"><MediaSlot src={c.image} alt={'Sertifikat '+c.title} label="Sertifikat" variant="certificate-media"/><div><span class="certificate-issuer">{c.issuer}</span><h4>{c.title}</h4><p>{c.date}</p></div></article>)}</div></div></div></section>
+      <section class="skills-section"><div class="container skills-layout"><div><p class="eyebrow">05 — KEAHLIAN</p><h2>Bekal untuk<br /><em>berkontribusi.</em></h2></div><div class="skill-groups"><div><h3>Administrasi & operasional</h3><p>Document control · Pengarsipan · Entri data · Pelaporan · Visualisasi data</p></div><div><h3>Komunikasi & kolaborasi</h3><p>Public speaking · Koordinasi tim · Manajemen waktu · Problem solving · Adaptabilitas</p></div><div><h3>Perangkat kerja</h3><div class="tools">{['Microsoft Word','Microsoft Excel','PowerPoint','Google Workspace','Notion','Canva'].map(tool => <span>{tool}</span>)}</div></div><div><h3>Bahasa</h3><p>Bahasa Indonesia — penutur asli<br />Bahasa Inggris — TOEFL 443</p></div></div></div></section>
+      <section class="contact-section container" id="kontak"><p class="eyebrow">06 — MARI TERHUBUNG</p><h2>Setiap kesempatan baik<br />dimulai dari <em>percakapan.</em></h2><p>Untuk peluang profesional, kolaborasi, atau sekadar berkenalan.</p><a class="contact-email" href={'mailto:'+profile.email}>{profile.email}<span aria-hidden="true">↗</span></a><div class="contact-links"><a class="text-link" href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a class="text-link" href="/cv-nur-hidayati.pdf" download>Unduh CV <span aria-hidden="true">↓</span></a></div></section>
+    </main>
+    <footer class="container footer"><a class="wordmark" href="#beranda" aria-label="Kembali ke beranda">nh<span>.</span></a><p>© {new Date().getFullYear()} Nur Hidayati</p><a href="#beranda">Kembali ke atas ↑</a></footer>
+    <script>
+      const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+      const nav = document.querySelector<HTMLElement>('#navigation');
+      function closeMenu() { toggle?.setAttribute('aria-expanded', 'false'); nav?.classList.remove('is-open'); }
+      toggle?.addEventListener('click', () => { const open = toggle.getAttribute('aria-expanded') !== 'true'; toggle.setAttribute('aria-expanded', String(open)); nav?.classList.toggle('is-open', open); });
+      nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', event => { if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') { closeMenu(); toggle.focus(); } });
+      window.matchMedia('(min-width: 801px)').addEventListener('change', closeMenu);
+    </script>
+  </body>
+</html>

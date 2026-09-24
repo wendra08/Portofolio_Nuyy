@@ -1,0 +1,7 @@
+---
+interface Props { src?: string; alt: string; label?: string; variant?: string; }
+const { src, alt, label = 'Dokumentasi menyusul', variant = '' } = Astro.props;
+---
+<div class:list={['media-slot', variant, { 'has-image': !!src }]}>
+  {src ? <img src={src} alt={alt} loading="lazy" width="800" height="600" /> : <div class="slot-content"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 5-5 4 4 3-3 6 6"/></svg><span>{label}</span><small>Segera dilengkapi</small></div>}
+</div>

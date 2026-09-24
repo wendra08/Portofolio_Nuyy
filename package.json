@@ -1,0 +1,1 @@
+{"name":"nur-hidayati-portfolio","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"astro dev","build":"astro build","preview":"astro preview","check":"astro check"},"dependencies":{"@astrojs/check":"^0.9.10","@fontsource/cormorant-garamond":"^5.3.0","@fontsource/dm-sans":"^5.3.0","astro":"^7.3.4","typescript":"^6.0.3"}}
