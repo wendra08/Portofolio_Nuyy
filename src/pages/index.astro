@@ -6,6 +6,7 @@ import '@fontsource/cormorant-garamond/400.css';
 import '@fontsource/cormorant-garamond/500.css';
 import '@fontsource/cormorant-garamond/400-italic.css';
 import '../styles/global.css';
+import '../styles/hero.css';
 import { profile, experiences, works, certificates, awards } from '../data/portfolio';
 ---
 <!doctype html>
@@ -27,9 +28,11 @@ import { profile, experiences, works, certificates, awards } from '../data/portf
     </div></header>
 
     <main id="main">
-      <section class="hero container" id="beranda" aria-labelledby="hero-title">
-        <div class="hero-copy"><p class="eyebrow"><span class="eyebrow-rule"></span> PENAJAM PASER UTARA, KALIMANTAN TIMUR</p><h1 id="hero-title">Nur<br /><em>Hidayati</em><span class="title-dot">.</span></h1><div class="hero-intro"><p class="role-label">HSE ADMINISTRATOR · SARJANA TERAPAN BISNIS</p><p class="hero-statement">Mengelola dokumen, data, dan koordinasi dengan teliti. Membawa kejelasan dalam setiap pekerjaan dan komunikasi.</p></div><div class="hero-actions"><a class="button-primary" href="#karya">Lihat pekerjaan saya <span aria-hidden="true">↗</span></a><a class="text-link" href="/cv-nur-hidayati.pdf" download>Unduh CV <span aria-hidden="true">↓</span></a></div></div>
-        <figure class="hero-photo"><img src={profile.portrait} alt="Potret Nur Hidayati" width="1600" height="900" fetchpriority="high" decoding="async" /><figcaption><span>01 / NUR HIDAYATI</span><span>ADMINISTRASI · KOMUNIKASI · KREATIVITAS</span></figcaption></figure><p class="hero-side-note" aria-hidden="true">PORTFOLIO — NUR HIDAYATI</p>
+      <section class="hero" id="beranda" aria-labelledby="hero-title">
+        <div class="hero-background"><img src={profile.portrait} alt="Potret Nur Hidayati" width="1600" height="900" fetchpriority="high" decoding="async" /></div>
+        <div class="container hero-inner"><div class="hero-copy"><p class="eyebrow"><span class="eyebrow-rule"></span> PENAJAM PASER UTARA, KALIMANTAN TIMUR</p><h1 id="hero-title">Nur<br /><em>Hidayati</em><span class="title-dot">.</span></h1><div class="hero-intro"><p class="role-label">HSE ADMINISTRATOR · SARJANA TERAPAN BISNIS</p><p class="hero-statement">Mengelola dokumen, data, dan koordinasi dengan teliti. Membawa kejelasan dalam setiap pekerjaan dan komunikasi.</p></div><div class="hero-actions"><a class="button-primary" href="#karya">Lihat pekerjaan saya <span aria-hidden="true">↗</span></a><a class="text-link" href="/cv-nur-hidayati.pdf" download>Unduh CV <span aria-hidden="true">↓</span></a></div></div>
+          <div class="hero-footer"><a class="hero-scroll" href="#karya">Kenali pekerjaan saya <span aria-hidden="true">↓</span></a><p>ADMINISTRASI · KOMUNIKASI · KREATIVITAS</p></div>
+        </div>
       </section>
 
       <section class="intro-strip" aria-label="Ringkasan profil"><div class="container intro-strip-inner"><p>Saya bekerja di persimpangan <em>ketelitian administrasi</em> dan <em>komunikasi yang baik.</em></p><a href="#tentang">Tentang saya <span aria-hidden="true">↗</span></a></div></section>
