@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Nur Hidayati', email: 'nuridayati1703@gmail.com',
   linkedin: 'https://www.linkedin.com/in/nuridayati', location: 'Penajam Paser Utara, Kalimantan Timur',
-  portrait: '',
+  portrait: '/images/nur-hidayati-profile.jpeg',
   teamPhoto: '',
 };
 export const experiences = [
@@ -37,7 +37,7 @@ export const works = [
   },
 ];
 export const certificates = [
-  { title: 'Pengelola Keuangan Perkantoran', issuer: 'BNSP', date: 'Juni 2025', image: '' },
+  { title: 'Pengelolaan Keuangan Perkantoran', issuer: 'BNSP', date: 'Juni 2025', image: '/images/sertifikat-pengelola-keuangan-perkantoran.jpeg' },
   { title: 'Full Stack Microsoft Excel Basic to Advance', issuer: 'MySkill Intensive Bootcamp', date: 'Oktober – November 2024', image: '' },
 ];
 export const awards = [

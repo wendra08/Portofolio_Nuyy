@@ -48,3 +48,7 @@
 }
 
 .case-detail-content p { font-size: 13px; line-height: 1.65; }
+
+.certificate-link { display: block; }
+.certificate-link:focus-visible { outline: 2px solid var(--wine); outline-offset: 4px; }
+.certificate-link .certificate-media { aspect-ratio: 3 / 4; }
