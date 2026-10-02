@@ -1,0 +1,50 @@
+.works-grid { align-items: start; }
+
+.work-card { display: flex; flex-direction: column; }
+
+.case-details {
+  border-top: 1px solid var(--line);
+  margin-top: 22px;
+}
+
+.case-details summary {
+  align-items: center;
+  color: var(--wine);
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: space-between;
+  list-style: none;
+  padding: 15px 0;
+}
+
+.case-details summary::-webkit-details-marker { display: none; }
+
+.case-details summary:focus-visible {
+  outline: 2px solid var(--wine);
+  outline-offset: 3px;
+}
+
+.case-details summary span {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.case-details[open] summary span { transform: rotate(45deg); }
+
+.case-detail-content {
+  display: grid;
+  gap: 18px;
+  padding: 5px 0 22px;
+}
+
+.case-detail-content h4 {
+  color: var(--ink);
+  font-size: 13px;
+  letter-spacing: .04em;
+  margin-bottom: 5px;
+}
+
+.case-detail-content p { font-size: 13px; line-height: 1.65; }

@@ -11,9 +11,30 @@ export const experiences = [
 ];
 // Isi image dengan path /images/nama-file.webp setelah aset tersedia.
 export const works = [
-  { category: 'ADMINISTRASI & DATA', title: 'Pelaporan & pengolahan data', description: 'Ruang untuk contoh laporan, visualisasi Excel, dan alur administrasi dengan data yang aman dipublikasikan.', image: '', alt: 'Contoh laporan dan visualisasi data', placeholder: 'Pratinjau laporan' },
-  { category: 'KOMUNIKASI PUBLIK', title: 'Di balik setiap acara', description: 'Ruang dokumentasi pengalaman memandu seminar, wisuda, dan berbagai kegiatan.', image: '', alt: 'Dokumentasi Nur Hidayati sebagai MC', placeholder: 'Dokumentasi acara' },
-  { category: 'DESAIN & PUBLIKASI', title: 'Informasi dalam bentuk visual', description: 'Ruang untuk pilihan poster, banner, dan konten media sosial dari kegiatan organisasi.', image: '', alt: 'Karya desain publikasi', placeholder: 'Pilihan karya desain' },
+  {
+    category: 'ADMINISTRASI & DATA', title: 'Data kesehatan untuk laporan audit',
+    description: 'Mengolah data kunjungan berobat karyawan dan menyusun laporan kesehatan tahunan selama magang di PT ITCI Kartika Utama.',
+    image: '', alt: 'Contoh laporan dan visualisasi data', placeholder: 'Pratinjau laporan',
+    context: 'Data kunjungan berobat karyawan mencakup periode 2023–2025, dengan lebih dari 160 entri per bulan yang perlu dikelola secara akurat.',
+    contribution: 'Melakukan entri dan pengolahan data, lalu menyusun laporan kesehatan tahunan 2023–2024 dengan visualisasi data untuk kebutuhan audit PHPL.',
+    result: 'Laporan tahunan tersusun sebagai bahan audit. Contoh visualnya akan ditambahkan setelah data yang layak dipublikasikan tersedia.',
+  },
+  {
+    category: 'KOMUNIKASI PUBLIK', title: 'Memandu acara untuk beragam audiens',
+    description: 'Menjadi Master of Ceremony untuk seminar, wisuda, dies natalis, dan kegiatan sosialisasi pada 2023–2024.',
+    image: '', alt: 'Dokumentasi Nur Hidayati sebagai MC', placeholder: 'Dokumentasi acara',
+    context: 'Setiap acara memiliki susunan dan audiens berbeda, mulai dari sekitar 50 hingga 1.000 peserta.',
+    contribution: 'Memandu jalannya acara, mengelola jadwal, berkoordinasi dengan panitia dan tim teknis, serta menangani kendala tak terduga.',
+    result: 'Berpengalaman membawakan beberapa jenis acara dalam rentang audiens tersebut. Foto atau video penampilan akan ditambahkan saat tersedia.',
+  },
+  {
+    category: 'DESAIN & PUBLIKASI', title: 'Publikasi dan koordinasi tim media',
+    description: 'Mengelola media dan informasi UKM PPKM sebagai wakil kepala, lalu kepala departemen.',
+    image: '', alt: 'Karya desain publikasi', placeholder: 'Pilihan karya desain',
+    context: 'Departemen membutuhkan konten publikasi yang terjadwal untuk kegiatan internal dan berskala nasional.',
+    contribution: 'Menyusun rencana konten, membuat lebih dari 50 desain poster, banner, dan kampanye media sosial, membagi tugas tim, serta memberi pelatihan multimedia.',
+    result: 'Turut mengoordinasikan dua kompetisi karya tulis ilmiah. Pilihan desain akan ditampilkan setelah arsip karyanya tersedia.',
+  },
 ];
 export const certificates = [
   { title: 'Pengelola Keuangan Perkantoran', issuer: 'BNSP', date: 'Juni 2025', image: '' },
