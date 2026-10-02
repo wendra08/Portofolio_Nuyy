@@ -1,6 +1,6 @@
 # Portfolio Nur Hidayati
 
-Website satu halaman berbasis Astro, dengan desain ivory–burgundy dan font yang di-host lokal. Konten bersumber dari CV yang diberikan. Dokumentasi dan sertifikat sengaja menggunakan placeholder, bukan karya rekaan.
+Website satu halaman berbasis Astro, dengan arah editorial berwarna slate dan tipografi yang di-host lokal. Konten bersumber dari CV yang diberikan. Dokumentasi karya yang belum tersedia tetap memiliki ruang tanpa menampilkan karya rekaan.
 
 ## Menjalankan
 
@@ -22,7 +22,6 @@ npm run preview
 - `src/data/portfolio.ts`: profil, pengalaman, karya, sertifikasi, penghargaan.
 - `src/pages/index.astro`: struktur halaman dan teks bagian lainnya.
 - `src/styles/global.css`: warna, tipografi, dan layout responsif.
-- `src/components/MediaSlot.astro`: placeholder yang otomatis menjadi gambar setelah `src` tersedia.
 - `public/cv-nur-hidayati.pdf`: CV unduhan.
 
 Simpan foto di `public/images/`, lalu isi properti `image` dengan `/images/nama-file.webp`. Isi `profile.portrait` untuk foto utama dan `profile.teamPhoto` untuk dokumentasi organisasi. Gunakan foto potret rasio sekitar 4:5 dan karya 4:3. Gambar sertifikat ditampilkan utuh agar tulisan tetap terbaca.
