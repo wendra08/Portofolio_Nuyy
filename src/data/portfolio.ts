@@ -2,6 +2,7 @@ export const profile = {
   name: 'Nur Hidayati', email: 'nuridayati1703@gmail.com',
   linkedin: 'https://www.linkedin.com/in/nuridayati', location: 'Penajam Paser Utara, Kalimantan Timur',
   portrait: '',
+  teamPhoto: '',
 };
 export const experiences = [
   { date: 'FEB 2026 — SEKARANG', role: 'HSE Administrator', company: 'PT ITCI Kartika Utama · ARSARI GROUP', description: 'Mendukung pelaksanaan K3 melalui administrasi yang tertib, dokumentasi yang terjaga, dan koordinasi kegiatan.', points: ['Mengelola document control, SOP, instruksi kerja, dan laporan K3 harian hingga bulanan.', 'Mendukung sosialisasi, safety briefing, induksi, pelatihan, serta pencatatan inspeksi dan tindak lanjut K3.'], tags: ['Document control', 'Pelaporan K3', 'Koordinasi'] },

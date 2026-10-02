@@ -25,7 +25,7 @@ npm run preview
 - `src/components/MediaSlot.astro`: placeholder yang otomatis menjadi gambar setelah `src` tersedia.
 - `public/cv-nur-hidayati.pdf`: CV unduhan.
 
-Simpan foto di `public/images/`, lalu isi properti `image` dengan `/images/nama-file.webp`. Isi `profile.portrait` untuk foto utama. Untuk dokumentasi organisasi, tambahkan `src` pada `MediaSlot` dengan `variant="team-media"` di halaman utama. Gunakan foto potret rasio sekitar 4:5, karya 4:3, dan sertifikat dengan seluruh isi tetap terbaca. Jika perlu menampilkan sertifikat penuh, ubah `object-fit` khusus sertifikat menjadi `contain`.
+Simpan foto di `public/images/`, lalu isi properti `image` dengan `/images/nama-file.webp`. Isi `profile.portrait` untuk foto utama dan `profile.teamPhoto` untuk dokumentasi organisasi. Gunakan foto potret rasio sekitar 4:5 dan karya 4:3. Gambar sertifikat ditampilkan utuh agar tulisan tetap terbaca.
 
 Pastikan contoh laporan tidak memuat data pribadi karyawan atau dokumen perusahaan yang tidak boleh dipublikasikan. Klaim dan status pekerjaan mengikuti CV dan perlu diperbarui ketika berubah.
 
