@@ -140,9 +140,9 @@ h2 em { color: var(--slate); font-weight: 400; }
 .award-row h4 { font-size: 15px; font-weight: 600; line-height: 1.4; }
 .award-row p { margin-top: 4px; font-size: 12px; }
 .certificate-item { display: grid; grid-template-columns: 132px 1fr; gap: 20px; align-items: center; padding: 23px 0; border-bottom: 1px solid var(--line); }
-.certificate-thumb { width: 132px; height: 155px; overflow: hidden; background: #e0e3e2; }
+.certificate-thumb { width: 132px; aspect-ratio: var(--certificate-ratio, 132 / 155); overflow: hidden; background: transparent; }
 .certificate-thumb a, .certificate-thumb img { display: block; width: 100%; height: 100%; }
-.certificate-thumb img { object-fit: contain; background: var(--white); }
+.certificate-thumb img { object-fit: contain; }
 .certificate-thumb a:focus-visible { outline-offset: -3px; }
 .certificate-empty { display: grid; place-items: center; width: 100%; height: 100%; border: 1px solid #c2c8ca; }
 .certificate-empty span { color: #879396; font: italic 60px/1 var(--serif); }
