@@ -30,7 +30,7 @@ export const works = [
   {
     category: 'DESAIN & PUBLIKASI', title: 'Publikasi dan koordinasi tim media',
     description: 'Mengelola media dan informasi UKM PPKM sebagai wakil kepala, lalu kepala departemen.',
-    image: '', alt: 'Karya desain publikasi', placeholder: 'Pilihan karya desain',
+    image: '/images/tim-ppkm.jpg', alt: 'Foto bersama anggota organisasi mengenakan seragam biru tua', placeholder: 'Dokumentasi tim',
     context: 'Departemen membutuhkan konten publikasi yang terjadwal untuk kegiatan internal dan berskala nasional.',
     contribution: 'Menyusun rencana konten, membuat lebih dari 50 desain poster, banner, dan kampanye media sosial, membagi tugas tim, serta memberi pelatihan multimedia.',
     result: 'Turut mengoordinasikan dua kompetisi karya tulis ilmiah. Pilihan desain akan ditampilkan setelah arsip karyanya tersedia.',
