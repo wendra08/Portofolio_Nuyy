@@ -10,12 +10,24 @@ import '../styles/hero.css';
 import '../styles/editorial.css';
 import '../styles/motion.css';
 import { profile, experiences, works, certificates, awards } from '../data/portfolio';
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const socialImageURL = new URL(profile.portrait, Astro.site);
 ---
 <!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href={canonicalURL} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="Nur Hidayati" />
+    <meta property="og:title" content="Nur Hidayati — Administrasi & Komunikasi" />
+    <meta property="og:description" content="Portfolio Nur Hidayati: pengalaman administrasi, pengelolaan data, komunikasi publik, dan media organisasi." />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={socialImageURL} />
+    <meta property="og:image:alt" content="Potret Nur Hidayati" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="description" content="Nur Hidayati — HSE Administrator dengan pengalaman dalam administrasi, pengelolaan data, komunikasi publik, dan media organisasi." />
     <meta name="theme-color" content="#f2f2ef" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
