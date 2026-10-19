@@ -22,10 +22,10 @@ export const works = [
   {
     category: 'KOMUNIKASI PUBLIK', title: 'Memandu acara untuk beragam audiens',
     description: 'Menjadi Master of Ceremony untuk seminar, wisuda, dies natalis, dan kegiatan sosialisasi pada 2023–2024.',
-    image: '', alt: 'Dokumentasi Nur Hidayati sebagai MC', placeholder: 'Dokumentasi acara',
+    image: '/images/nur-hidayati-mc.jpg', alt: 'Nur Hidayati membawakan acara sambil memegang cue card dan mikrofon', placeholder: 'Dokumentasi acara',
     context: 'Setiap acara memiliki susunan dan audiens berbeda, mulai dari sekitar 50 hingga 1.000 peserta.',
     contribution: 'Memandu jalannya acara, mengelola jadwal, berkoordinasi dengan panitia dan tim teknis, serta menangani kendala tak terduga.',
-    result: 'Berpengalaman membawakan beberapa jenis acara dalam rentang audiens tersebut. Foto atau video penampilan akan ditambahkan saat tersedia.',
+    result: 'Berpengalaman membawakan beberapa jenis acara dalam rentang audiens tersebut.',
   },
   {
     category: 'DESAIN & PUBLIKASI', title: 'Publikasi dan koordinasi tim media',
