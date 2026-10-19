@@ -11,7 +11,9 @@ import '../styles/editorial.css';
 import '../styles/motion.css';
 import { profile, experiences, works, certificates, awards } from '../data/portfolio';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const socialImageURL = new URL(profile.portrait, Astro.site);
+const socialImageURL = new URL('/images/nur-hidayati-social-v1.jpg', Astro.site);
+const socialTitle = 'Nur Hidayati | HSE Administrator';
+const socialDescription = 'Kenali pengalaman Nur dalam administrasi, pengelolaan data, komunikasi publik, dan kerja tim.';
 ---
 <!doctype html>
 <html lang="id">
@@ -22,12 +24,20 @@ const socialImageURL = new URL(profile.portrait, Astro.site);
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="id_ID" />
     <meta property="og:site_name" content="Nur Hidayati" />
-    <meta property="og:title" content="Nur Hidayati — Administrasi & Komunikasi" />
-    <meta property="og:description" content="Portfolio Nur Hidayati: pengalaman administrasi, pengelolaan data, komunikasi publik, dan media organisasi." />
+    <meta property="og:title" content={socialTitle} />
+    <meta property="og:description" content={socialDescription} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={socialImageURL} />
-    <meta property="og:image:alt" content="Potret Nur Hidayati" />
+    <meta property="og:image:secure_url" content={socialImageURL} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Portfolio Nur Hidayati — HSE Administrator, Administrasi, Data, dan Komunikasi" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={socialTitle} />
+    <meta name="twitter:description" content={socialDescription} />
+    <meta name="twitter:image" content={socialImageURL} />
+    <meta name="twitter:image:alt" content="Portfolio Nur Hidayati — HSE Administrator" />
     <meta name="description" content="Nur Hidayati — HSE Administrator dengan pengalaman dalam administrasi, pengelolaan data, komunikasi publik, dan media organisasi." />
     <meta name="theme-color" content="#f2f2ef" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />

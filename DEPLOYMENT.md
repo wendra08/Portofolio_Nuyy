@@ -31,3 +31,12 @@ Jalankan npm run check dan npm run build sebelum mengirim perubahan ke repositor
 URL canonical, Open Graph, robots.txt, dan sitemap.xml menggunakan site di astro.config.mjs. Sitemap saat ini memuat halaman utama karena portfolio ini berupa satu halaman.
 
 Konfigurasi .openai/hosting.json adalah peninggalan hosting Sites dan tidak digunakan oleh Vercel.
+
+## Pratinjau saat link dibagikan
+
+Gambar berbagi: public/images/nur-hidayati-social-v1.jpg (1200 × 630, JPEG).
+Metadata Open Graph dan Twitter Card berada di src/pages/index.astro dan sudah dirender dalam HTML statis agar bisa dibaca crawler tanpa JavaScript.
+
+Setelah redeploy, pastikan https://nurhidayati.my.id/images/nur-hidayati-social-v1.jpg dapat dibuka tanpa login. Kemudian coba tempel URL situs pada pesan baru. Bentuk dan ukuran pratinjau ditentukan oleh aplikasi penerima; metadata tidak menjamin semua aplikasi menampilkan kartu yang sama. Pengujian lokal tidak memverifikasi hasil pratinjau di WhatsApp.
+
+Jika desain gambar diganti lagi, gunakan nama versi file baru dan perbarui socialImageURL agar URL gambar berbeda dari versi sebelumnya.
