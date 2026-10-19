@@ -37,8 +37,8 @@ export const works = [
   },
 ];
 export const certificates = [
-  { title: 'Pengelolaan Keuangan Perkantoran', issuer: 'BNSP', date: 'Juni 2025', image: '/images/sertifikat-pengelola-keuangan-perkantoran.jpeg' },
-  { title: 'Full Stack Microsoft Excel Basic to Advance', issuer: 'MySkill Intensive Bootcamp', date: 'Oktober – November 2024', image: '' },
+  { title: 'Pengelolaan Keuangan Perkantoran', issuer: 'BNSP', date: 'Juni 2025', image: '/images/sertifikat-pengelola-keuangan-perkantoran.jpeg', document: '', width: 978, height: 1336 },
+  { title: 'Full Stack Microsoft Excel Basic to Advance', issuer: 'MySkill Intensive Bootcamp', date: 'Oktober – November 2024', image: '/images/sertifikat-myskill-excel.png', document: '/certificates/myskill-fullstack-microsoft-excel.pdf', width: 1440, height: 810 },
 ];
 export const awards = [
   ['2025', 'Wisudawan Terbaik', 'Jurusan Administrasi Bisnis · Politeknik Negeri Samarinda'],
